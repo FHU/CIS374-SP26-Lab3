@@ -60,11 +60,11 @@ public class MinHeap<T> where T : IComparable<T>
 
     /// <summary>
     /// Removes and returns the max item in the min-heap.
-    /// Time complexity: O( ? )
+    /// Time complexity: O( n )
     /// </summary>
     public T ExtractMax()
     {
-
+        return default;
     }
 
     // TODO
@@ -95,7 +95,7 @@ public class MinHeap<T> where T : IComparable<T>
     /// </summary>
     public bool Contains(T value)
     {
-      for(int i = 0; i < Count; i++)
+        for (int i = 0; i < Count; i++)
         {
             if (array[i].CompareTo(value) == 0)
             {
